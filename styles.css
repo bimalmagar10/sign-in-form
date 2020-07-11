@@ -1,0 +1,95 @@
+ body {
+ 	margin:0;
+ 	padding: 0;
+ 	background-size: cover;
+ 	font-family:sans-serif;
+ }
+
+ .container {
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ 	width: 25rem;
+ 	padding: 2.5rem;
+ 	box-sizing: border-box;
+ 	border:1px solid #696969;
+ 	border-radius: 1rem;
+ 	z-index: 4;
+ 	box-shadow:  10px 10px 2px #A0A0A0,-10px -10px 2px #A0A0A0,10px 10px 2px #A0A0A0,-10px -10px 2px #A0A0A0;
+ }
+ .container h1 {
+    margin:0 0 -0 -1.25rem;
+    padding: 0;
+    color:#202124;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+ .container div.icon{
+ 	text-align: center;
+ 	margin-bottom: 25px;
+ }
+ .container div i{
+    font-size: 3rem;
+    color:#fff;
+    background: #000;
+    border-radius: 50%;
+    border:2px solid #696969;
+ }
+ .container .input-box{
+    position:relative;
+ }
+ .container .input-box input {
+ 	width: 93%;
+ 	padding: 0.625rem 10px;
+ 	font-size: 1rem;
+ 	letter-spacing: 0.062rem;
+ 	margin-bottom: 1.875rem;
+ 	background: transparent;
+ 	border:1px solid #ccc;
+ 	border-radius: 4px;
+ }
+ .container .input-box label {
+ 	position:absolute;
+ 	top: 0;
+ 	left: 10px;
+ 	padding: 0.625rem 0;
+ 	color: grey;
+ 	pointer-events: none;
+ 	transition: all 0.5s ease;
+ 	letter-spacing: 0.2rem;
+
+ }
+ .container .input-box input:focus ~ label,
+	 .container .input-box input:valid ~ label,
+	 .container .input-box input:not([value=""]) ~ label {
+    top: -1rem;
+    left:10px;
+    color:#1a73e8;
+    font-size:0.8rem;
+    background-color: white;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+ }
+ .container .input-box input:focus{
+ 	outline: none;
+ 	border:2px solid #1a37e8;
+ }
+ .container input[type="submit"]{
+ 	border:none;
+ 	outline:none;
+ 	float: right;
+ 	padding: 0.625rem 1.25rem;
+ 	background:#1a73e8;
+ 	border-radius:0.312rem;
+ 	font-size:1rem;
+ 	color:#fff;
+ 	cursor:pointer;
+ }
+ .container input[type="submit"]:hover {
+ 	background:#287ae6;
+ 	box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 3px 1px 1px rgba(66,133,244,0.3);
+ }
